@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-guard-proxy"
+version = "0.1.0"
+authors = [
+  { name = "OrderStream", email = "healthdecoded77@gmail.com" },
+]
+description = "Enterprise reverse proxy and firewall middleware for Model Context Protocol (MCP) JSON-RPC tool calls"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pydantic>=2.0",
+]
+
+[project.scripts]
+agent-guard-proxy = "agent_guard_proxy.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

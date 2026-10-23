@@ -1,0 +1,2 @@
+[console_scripts]
+agent-guard-proxy = agent_guard_proxy.cli:main
